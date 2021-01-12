@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    /* margin: 0; */
+}
+div.container
+{
+    border:3px solid rgb(70, 66, 66);
+    padding-left: 5%;
+}
+div.img
+{
+    display: flex;
+    justify-content: center;
+}
+div > img
+{
+    width: 50%;
+}
+
+div.back-holder img
+{
+    width: 10%;
+}
