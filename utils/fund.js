@@ -52,7 +52,7 @@ function create_div_info()
 {
     let outer_div = document.createElement('div');
     outer_div.id = "outer_div";
-    outer_div.style.position = "absolute";
+    outer_div.style.position = "fixed";
    outer_div.style.height = "";
    outer_div.style.top = "0";
    outer_div.style.right = "0";
