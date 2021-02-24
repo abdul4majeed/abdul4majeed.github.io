@@ -1,5 +1,5 @@
-// let loc = "file:///home/abdulmajeed/Documents/website/abdul4majeed.github.io";
-let loc = location.origin;
+let loc = "file:///home/abdulmajeed/Documents/website/abdul4majeed.github.io";
+// let loc = location.origin;
 let image_path = loc +'/images/utils/';
 let hover_in_image = 'coffee_in.png';
 let hover_out_image = 'coffee_out.png';
@@ -56,6 +56,7 @@ function create_div_info()
    outer_div.style.right = "0";
    outer_div.style.bottom = "0";
    outer_div.style.left = "0";
+   outer_div.style.overflow = "auto";
 //    outer_div.style.border = "1px solid red";
    outer_div.style.backgroundColor= "rgba(255,255,255,0)";
    document.body.appendChild(outer_div);
