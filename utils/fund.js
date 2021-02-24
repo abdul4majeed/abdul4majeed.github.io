@@ -34,9 +34,11 @@ function create_div_info_close()
     div.innerText = "x";
     div.style.position = "absolute";
     div.style.right = "1%";
-    div.style.top = "1%";
+    div.style.top = "0%";
     div.style.cursor = "pointer";
-    div.style.color = "rgba(255,255,255,1)";
+    div.style.color = "#ff0000";
+    div.style.fontSize = "20px";
+    div.style.fontStyle = "oblique";
     div.onmouseup = (() => { 
         document.getElementById('outer_div').remove();
         document.body.style.overflow = "scroll";
