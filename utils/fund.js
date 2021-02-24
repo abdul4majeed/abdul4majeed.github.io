@@ -39,6 +39,7 @@ function create_div_info_close()
     div.style.color = "rgba(255,255,255,1)";
     div.onmouseup = (() => { 
         document.getElementById('outer_div').remove();
+        document.body.style.overflow = "scroll";
      });
     document.getElementById('div_fund').appendChild(div);
 
@@ -99,6 +100,7 @@ function create_image() {
         create_div_info();
         create_div_info_close();
         create_developer_img_and_text();
+        document.body.style.overflow = "hidden";
         console.log('clicked');
     });
     document.getElementById('img_fund').appendChild(img); 
