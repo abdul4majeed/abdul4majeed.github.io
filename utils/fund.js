@@ -67,7 +67,7 @@ function create_div_info()
    div.id = 'div_fund';
    div.style.position = "absolute";
    div.style.height = "";
-   div.style.top = "10%";
+   div.style.top = "1%";
    div.style.right = "25%";
 //    div.style.bottom = "25%";
    div.style.left = "25%";
