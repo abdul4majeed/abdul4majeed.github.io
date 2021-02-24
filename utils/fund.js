@@ -1,5 +1,5 @@
-let loc = "file:///home/abdulmajeed/Documents/website/abdul4majeed.github.io";
-// let loc = location.origin;
+// let loc = "file:///home/abdulmajeed/Documents/website/abdul4majeed.github.io";
+let loc = location.origin;
 let image_path = loc +'/images/utils/';
 let hover_in_image = 'coffee_in.png';
 let hover_out_image = 'coffee_out.png';
