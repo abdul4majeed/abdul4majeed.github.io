@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install android sdk command line tools in windows operating System</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/utils/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/utils/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/utils/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/utils/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script data-ad-client="ca-pub-8638257169122597" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Install and setup android sdk command line toold in windows </h1>
+    <p>Hey fellows in this post I will cover how to install and setup the android sdk command line tools in windows. In this post we will cover the following points</p>
+    <h2>1. Downloading the android sdk form the website </h2>
+    <h2>2. Unzip the android sdk to any directory</h2>
+    <h2>3. Reorganize the folder structure </h2>
+    <h2>4. Download the required using sdkmanager.bat/h2>
+    <h2>5. Setup the path of the android sdk in windows environment variable</h2>
+    <h2>6. Check the setup of the android sdk</h2>
+    <p>Let's get started</p>
+    <p>Step 1: Go to the <a href="https://developer.android.com/studio" rel="nofollow" target="_blank">Android Studio</a> site</p>
+    <div class="img">
+        <img src="../images/android_sdk/android_studio_home.png" loading="lazy" title="Android Studio Home Page" alt="Android Studio Site Home Page">
+    </div>
+    <p>Step 2: Go to the Command line tools only section</p>
+    <div class="img">
+        <img src="../images/android_sdk/android_command_tool_section.png" loading="lazy" title="Command Line Tool Section" alt="Command Line Tool Section">
+    </div>
+    <p>Step 3: Click and download sdk command line tools for windows</p>
+    <div class="img">
+        <img src="../images/android_sdk/windows_command_tools_download.png" loading="lazy" title="Command Line Tools for Windows" alt="Command Line Tools for Windows">
+    </div>
+    <p>Step 4: Accept the license and click Download Android Command Line Tools for windows button</p>
+    <div class="img">
+        <img src="../images/android_sdk/android_sdk_license.png" loading="lazy" title="Command Line Tools License Page" alt="Command Line Tools License Page">
+    </div>
+    <p>Step 5: After accepting the license and clicking the Download Android Command Line Tools for windows button downloading will be start</p>
+    <div class="img">
+        <img src="../images/android_sdk/android_sdk_download_starts.png" loading="lazy" title="Command Line Tools Start Downloading" alt="Command Line Tools Start Downloading">
+    </div>
+    <p>Step 6: Extract the tar file to anywhere you like.</p>
+    <p>I will extract my tar file at <code> F:\android </code> for easy reference where F:/ is drive name and android is the home directory of android</p>
+    <div class="img">
+        <img src="../images/android_sdk/unzip_android_sdk.png" loading="lazy" title="Extract Android SDK and Change the Android SDK Folder Name to android" alt="Extract Android SDK and Change the Android SDK Folder Name to android">
+    </div>
+    <p>Step 7: Go inside cmdline-tools folder within android folder and create and folder with name latest.</p>
+    <div class="img">
+        <img src="../images/android_sdk/create_latest_folder.png" loading="lazy" title="Create the Latest Folder within Cmdline Tool Folder" alt="Create the Latest Folder within Cmdline Tool Folder">
+    </div>
+    <p>Step 8: Move all files and folders inside the latest folder</p>
+    <div class="img">
+        <img src="../images/android_sdk/move_files_sdk.png" loading="lazy" title="Move Files and Folder in Latest Folder" alt="Move Files and Folder in Latest Folder">
+    </div>
+    <p>Step 9: Open command prompt at the bin folder to access the sdkmanager.bat and get the required packages.The sdkmanager is a command line tool that allows you to view, install, update, and uninstall packages for the Android SDK. </p>
+    <div class="img">
+        <img src="../images/android_sdk/cmd_prompt.png" loading="lazy" title="Open Command Prompt at bin Folder" alt="Open Command Prompt at bin Folder">
+    </div>
+    <p>Step 10: Now Select which android version and api you wish to download.I am going to download the latest version of android.</p>
+    <div class="img">
+        <img src="../images/android_sdk/android_version_api.png" loading="lazy" title="Android API Versions" alt="Android API Versions">
+    </div>
+    <p>Step 11: Enter the <code>sdkmanager.bat sdkmanager.bat "platforms;android-31" "build-tools;31.0.0" "platform-tools"</code> command in the command prompt to download the required packages.</p>
+    <div class="img">
+        <img src="../images/android_sdk/package_command.png" loading="lazy" title="Download Packages from SDK Manager" alt="Download Packages from SDK Manager">
+    </div>
+    <p>Step 12: Downloading will be start after accepting the package license by typing y in the command prompt and hit enter key from keyboard.</p>
+    <div class="img">
+        <img src="../images/android_sdk/package_license.png" loading="lazy" title="Download Packages License" alt="Download Packages License">
+    </div>
+    <p>Step 13: Downloading packages will be found under android.</p>
+    <div class="img">
+        <img src="../images/android_sdk/packages_downloaded.png" loading="lazy" title="Downloaded Packages" alt="Downloaded Packages">
+    </div>
+    <p>Step 14: To Setup the path go to the environment variable from the pc properties.</p>
+    <div class="img">
+        <img src="../images/android_sdk/environment_one.png" loading="lazy" title="Environment Varibales PC Search" alt="Environment Varibales PC Search">
+    </div>
+    <br>
+    <div class="img">
+        <img src="../images/android_sdk/environment_two.png" loading="lazy" title="PC Advance Properties" alt="PC Advance Properties">
+    </div>
+    <br>
+    <div class="img">
+        <img src="../images/android_sdk/environment_three.png" loading="lazy" title="Environment Varibales" alt="Environment Varibales">
+    </div>
+    <p>Step 15: Create new variable ANDROID_HOME in the environment variable and link to the android folder in which we have all the packages.</p>
+    <div class="img">
+        <img src="../images/android_sdk/path.png" loading="lazy" title="Environment Path Android Home Setup" alt="Environment Path Android Home Setup">
+    </div>
+    <div class="img">
+        <img src="../images/android_sdk/path_two.png" loading="lazy" title="Environment Path Android Home Added" alt="Environment Path Android Home Added">
+    </div>
+    <p>Step 16: Go to the path property and add the adb path to the list.</p>
+    <div class="img">
+        <img src="../images/android_sdk/adb_path_one.png" loading="lazy" title="Environment Path ADB Setup" alt="Environment Path ADB Setup">
+    </div>
+    <div class="img">
+        <img src="../images/android_sdk/adb_path_one.png" loading="lazy" title="Environment Path ADB Setup" alt="Environment Path ADB Setup">
+    </div>
+    <div class="img">
+        <img src="../images/android_sdk/adb_path_two.png" loading="lazy" title="Environment Path ADB Added" alt="Environment Path ADB Added">
+    </div>
+    <p>Step 17: Close all the property windows by clicking OK button and open command prompt to check if everything is install correctly and type <code>adb</code> it should return the results as shown below</p>
+    <div class="img">
+        <img src="../images/android_sdk/adb_check.png" loading="lazy" title="Check Adb using command prompt" alt="Check Adb using command prompt">
+    </div>
+    <div class="back-holder">
+        <a href="../index.html"><img src="../images/utils/back.png" loading="lazy" title="back to home page" alt="Back"></a>
+    </div>
+  </div>
+
+  <script src="../utils/fund.js"></script>
+</body>
+</html>
+
+
