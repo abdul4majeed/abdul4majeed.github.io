@@ -19,6 +19,7 @@ function create_developer_img_and_text() {
                         <p><img width='25px' src="`+image_path+'bitcoin.png'+`" />  
                         <span style="vertical-align: super;word-wrap: break-word;"><b>Bitcoin:</b> bc1qfxgdas6d3qa8xccur0xwrglf76psj65h2fj0jy</span>
                         </p>`;
+                        
                         // <p><img width='25px' src="`+image_path+'ethereum.png'+`" />  
                         // <span style="vertical-align: super;word-wrap: break-word;"><b>Ethereum:</b> 0x76b887d5C668308cDB0aec3bdf70A21fb630477E</span>
                         // </p>
